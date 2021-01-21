@@ -1,5 +1,5 @@
 #+SETUPFILE: settings.org
-#+TITLE: Documents
+#+TITLE: Documents and Media
 * Emacs Files
   + https://github.com/mkjunker contains all of my public Emacs lisp
     files.
@@ -12,4 +12,23 @@
   + USS /Woodrow Wilson/ diving alarm, [[https://freesound.org/people/mkjunker/sounds/156672/][WAV version]], [[https://drive.google.com/file/d/0B65OWczbRgzAaWxNOEVpQWx0am8/view?usp=drive_web][MP3 version]]
   + [[https://drive.google.com/file/d/0B65OWczbRgzAOTNZTEJDdTFCVEE/view?usp=drive_web]["Just As I Am"]]
 * Pictures
-  + [[https://drive.google.com/file/d/0B65OWczbRgzAb0tqdDJ5SnFVak0/view?usp=drive_web][USS /Woodrow Wilson/ wardroom, outboard of USS /Orion, Santo Stefano Island, Italy, 1992]]
+  + [[https://drive.google.com/file/d/0B65OWczbRgzAb0tqdDJ5SnFVak0/view?usp=drive_web][USS /Woodrow Wilson/ wardroom, outboard of USS /Orion/.62, 1.Santo Stefano Island, Italy, 1992]]
+* TODO Postscript Files
+  # consider moving to github
+  /The following plotting tools are provided as-is. The author makes
+  no guarantees about their accuracy or usefulness. Use them at your
+  own risk./
+
+  Don't have a Postscript printer? Try ([[http://pages.cs.wisc.edu/~ghost/][Ghostscript and Ghostview
+  (GSView for Windows environments)]]. These tools allow viewing and
+  printing Postscript files.
+
+  Some of the Postscript files were developed using MetaPost. A Windows
+  version of MetaPost is included with MikTeX at The MikTeX Project
+  Page. For more on MetaPost, try:
+  * [[http://www.tug.org/metapost.html][TUG's MetaPost page]]
+
+  Files:
+  + maneuvering board: [[https://drive.google.com/file/d/0B65OWczbRgzAREJJaHV0d1FRZmM/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzATkx4YWF3ZEdEcGM/view?usp=drive_web][MetaPost source]]
+  + navigation plot: [[https://drive.google.com/file/d/0B65OWczbRgzANUNrYnBvUHVGWU0/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzAbnJMRHN2SmJsNGs/view?usp=drive_web][MetaPost source]]
+  + wind chill chart: [[https://drive.google.com/file/d/0B65OWczbRgzAd2YtSDBoVUdrcGs/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzAbkRRdFNzcmVnVzQ/view?usp=drive_web][gnuplot source]]
