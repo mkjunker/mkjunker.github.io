@@ -6,12 +6,17 @@ This page is under construction.  My original page is at
 https://sites.google.com/site/mkjunker.  Please look there for
 content, which will be moved here soon (I hope).  [2021-01-21 Thu]
 
+"If you're using Excel, you're probably doing it wrong."
+
 * Links
-  + [[./documents.org][Documents]]
+  + [[./documents.org][Documents and Media]]
   + [[./page2.org][Page 2]]
   + Permanent link to my home page: https://alum.mit.edu/www/junker
-  + My other page: https://sites.google.com/site/mkjunker
+  + My other page (soon to be redundant):
+    https://sites.google.com/site/mkjunker
   + [[./sitemap.org][Site map]]
+
+
 
 # https://stackoverflow.com/questions/51415911/emacs-org-mode-how-to-choose-font-when-exporting-to-html
 # TO DO:
