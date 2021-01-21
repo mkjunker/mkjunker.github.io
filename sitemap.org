@@ -1,5 +1,6 @@
 #+TITLE: Sitemap for project mkjunker.github.io
 
+- [[file:documents.org][Documents]]
 - [[file:index.org][Matt's Home Page]]
 - [[file:page2.org][Page 2]]
 - [[file:readme.org][readme]]

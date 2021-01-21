@@ -1,0 +1,10 @@
+#+SETUPFILE: settings.org
+#+TITLE: Documents
+* Emacs Files
+  + https://github.com/mkjunker contains all of my public Emacs lisp
+    files.
+* Navy Documents
++ [[https://drive.google.com/file/d/1RMurM18N3aC_bCx8Nn70R4xZGgbomD_G/view?usp=drive_web][USS /Woodrow Wilson/ inactivation program, 24 September 1993]]
++ [[https://drive.google.com/file/d/1LqZOCDkWdKj85EVnD5DiRJNeUK7o25W6/view?usp=drive_web][Flooding in the Fan Room, /Fathom/ Magazine, September/October 1993]]
++ [[https://drive.google.com/file/d/0B65OWczbRgzAWWxiTU1RTFAwRXc/view?usp=drive_web][A Review of the United States Naval Nuclear Propulsion Program, June 1987]]
++ [[https://drive.google.com/file/d/0B65OWczbRgzAR0kzeF9FYXRIRmc/view?usp=drive_web][Polaris-Poseidon Fleet Ballistic Missle Fact Sheet 1967]]
