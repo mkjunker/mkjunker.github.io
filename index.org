@@ -1,7 +1,18 @@
+#+SETUPFILE: settings.org
 #+TITLE: Matt's Home Page
+#+INDEX: Home Page
 
-[[./page2.org][Page 2]]
+This page is under construction.  My original page is at
+https://sites.google.com/site/mkjunker.  Please look there for
+content, which will be moved here soon (I hope).  [2021-01-21 Thu]
 
-Permanent link: https://alum.mit.edu/www/junker\\
-My other page: https://sites.google.com/site/mkjunker\\
-[[./sitemap.org][Site map]]
+* Links
+  + [[./page2.org][Page 2]]
+  + Permanent link to my home page: https://alum.mit.edu/www/junker
+  + My other page: https://sites.google.com/site/mkjunker
+  + [[./sitemap.org][Site map]]
+
+# https://stackoverflow.com/questions/51415911/emacs-org-mode-how-to-choose-font-when-exporting-to-html
+# TO DO:
+# org-html-postamble-format
+# :html-postamble
