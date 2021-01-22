@@ -1,5 +1,5 @@
-#+TITLE: Page 2
-#+SETUPFILE: settings.org
+# +TITLE: Page 2
+# +SETUPFILE: settings.org
 
 * Text
   #+INDEX: text

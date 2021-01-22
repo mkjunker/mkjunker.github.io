@@ -1,18 +1,22 @@
 #+SETUPFILE: settings.org
-#+TITLE: Documents and Media
+# +TITLE: Documents and Media
+# +INFOJS_OPT: view:content toc:nil
 * Emacs Files
   + https://github.com/mkjunker contains all of my public Emacs lisp
     files.
 * Navy Documents
+  #+INDEX: navy
   + [[https://drive.google.com/file/d/1RMurM18N3aC_bCx8Nn70R4xZGgbomD_G/view?usp=drive_web][USS /Woodrow Wilson/ inactivation program, 24 September 1993]]
   + [[https://drive.google.com/file/d/1LqZOCDkWdKj85EVnD5DiRJNeUK7o25W6/view?usp=drive_web][Flooding in the Fan Room, /Fathom/ Magazine, September/October 1993]]
   + [[https://drive.google.com/file/d/0B65OWczbRgzAWWxiTU1RTFAwRXc/view?usp=drive_web][A Review of the United States Naval Nuclear Propulsion Program, June 1987]]
   + [[https://drive.google.com/file/d/0B65OWczbRgzAR0kzeF9FYXRIRmc/view?usp=drive_web][Polaris-Poseidon Fleet Ballistic Missle Fact Sheet 1967]]
 * Sounds
+  #+INDEX: navy
   + USS /Woodrow Wilson/ diving alarm, [[https://freesound.org/people/mkjunker/sounds/156672/][WAV version]], [[https://drive.google.com/file/d/0B65OWczbRgzAaWxNOEVpQWx0am8/view?usp=drive_web][MP3 version]]
   + [[https://drive.google.com/file/d/0B65OWczbRgzAOTNZTEJDdTFCVEE/view?usp=drive_web]["Just As I Am"]]
 * Pictures
-  + [[https://drive.google.com/file/d/0B65OWczbRgzAb0tqdDJ5SnFVak0/view?usp=drive_web][USS /Woodrow Wilson/ wardroom, outboard of USS /Orion/.62, 1.Santo Stefano Island, Italy, 1992]]
+  #+INDEX: navy
+  + [[https://drive.google.com/file/d/0B65OWczbRgzAb0tqdDJ5SnFVak0/view?usp=drive_web][USS /Woodrow Wilson/ wardroom, outboard of USS /Orion/, Santo Stefano Island, Italy, 1992]]
 * TODO Postscript Files
   # consider moving to github
   /The following plotting tools are provided as-is. The author makes
@@ -32,3 +36,20 @@
   + maneuvering board: [[https://drive.google.com/file/d/0B65OWczbRgzAREJJaHV0d1FRZmM/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzATkx4YWF3ZEdEcGM/view?usp=drive_web][MetaPost source]]
   + navigation plot: [[https://drive.google.com/file/d/0B65OWczbRgzANUNrYnBvUHVGWU0/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzAbnJMRHN2SmJsNGs/view?usp=drive_web][MetaPost source]]
   + wind chill chart: [[https://drive.google.com/file/d/0B65OWczbRgzAd2YtSDBoVUdrcGs/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzAbkRRdFNzcmVnVzQ/view?usp=drive_web][gnuplot source]]
+* Sheepshead
+  Trump Precedence: \\
+  Q\clubs Q\spades Q\hearts Q\diamond   J\clubs J\spades J\hearts
+  J\diamond A\diamond 10\diamond K\diamond 9\diamond 8\diamond
+  7\diamond
+
+  Fail Precedence: \\
+  (\clubs \spades \diamond) A 10 K 9 8 7
+
+  |      <r> |    |      |       |       |        |     |
+  |   *Card* |  A |   10 |     K |     Q |      J |     |
+  | *Points* | 11 |   10 |     4 |     3 |      2 |     |
+
+  |           <r> | <c> | <c>  |  <c>  |  <c>  |  <c>   | <c> |
+  |        Points |  0  | 1-30 | 31-60 | 61-90 | 91-119 | 120 |
+  | Partner Score | +3  |  +2  |  +1   |  -1   |   -2   | -3  |
+  

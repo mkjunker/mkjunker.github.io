@@ -1,6 +1,10 @@
 #+SETUPFILE: settings.org
+#+INFOJS_OPT: view:overview toc:nil
 #+TITLE: Matt's Home Page
 #+INDEX: Home Page
+Click on a heading to see more.  Press ~i~ to change views.
+
+My permanent link is https://alum.mit.edu/junker.
 
 This page is under construction.  My original page is at
 https://sites.google.com/site/mkjunker.  Please look there for
@@ -8,9 +12,16 @@ content, which will be moved here soon (I hope).  [2021-01-21 Thu]
 
 "If you're using Excel, you're probably doing it wrong."
 
+* Documents
+#+INCLUDE: documents.org :only-contents t
+
+* Page 2
+#+INCLUDE: page2.org :only-contents t
+
 * Links
-  + [[./documents.org][Documents and Media]]
-  + [[./page2.org][Page 2]]
+  #+INDEX: links
+  # + [[./documents.org][Documents and Media]]
+  # + [[./page2.org][Page 2]]
   + Permanent link to my home page: https://alum.mit.edu/www/junker
   + My other page (soon to be redundant):
     https://sites.google.com/site/mkjunker
@@ -22,3 +33,4 @@ content, which will be moved here soon (I hope).  [2021-01-21 Thu]
 # TO DO:
 # org-html-postamble-format
 # :html-postamble
+# http://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html

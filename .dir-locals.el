@@ -13,12 +13,14 @@
  (org-mode . ((org-publish-project-alist . (("mkjunker.github.io"
                                              :base-directory "."
                                              :publishing-directory "."
+                                             :exclude "*.org"
+                                             :include ("index.org")
                                              :section-numbers nil
                                              :table-of-contents nil
                                              :html-link-up "index.html"
                                              :html-link-home "index.html"
                                              :exclude "settings.org"
-                                             :make-index t
+                                             :makeindex nil
                                              :with-toc nil
                                              :publishing-function org-html-publish-to-html
                                              :auto-sitemap org-public-current-project)))
