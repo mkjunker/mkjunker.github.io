@@ -7,16 +7,85 @@ Click on a heading to see more.  Press ~i~ to change views.
 My permanent link is https://alum.mit.edu/junker.
 
 This page is under construction.  My original page is at
-https://sites.google.com/site/mkjunker.  Please look there for
-content, which will be moved here soon (I hope).  [2021-01-21 Thu]
+https://sites.google.com/site/mkjunker.  Please look there for missing
+content, which will be moved here soon (I hope).  [2021-02-10 Wed]
 
-"If you're using Excel, you're probably doing it wrong."
+* Junker's Laws
+  1. If you're using Excel, you're probably doing it wrong.
+  2. The best review is trying to implement the code or test.
 
 * Documents
-#+INCLUDE: documents.org :only-contents t
+* Emacs Files
+  + https://github.com/mkjunker contains all of my public Emacs lisp
+    files.
+* Navy Documents
+  #+INDEX: navy
+  + [[https://drive.google.com/file/d/1RMurM18N3aC_bCx8Nn70R4xZGgbomD_G/view?usp=drive_web][USS /Woodrow Wilson/ inactivation program, 24 September 1993]]
+  + [[https://drive.google.com/file/d/1LqZOCDkWdKj85EVnD5DiRJNeUK7o25W6/view?usp=drive_web][Flooding in the Fan Room, /Fathom/ Magazine, September/October 1993]]
+  + [[https://drive.google.com/file/d/0B65OWczbRgzAWWxiTU1RTFAwRXc/view?usp=drive_web][A Review of the United States Naval Nuclear Propulsion Program, June 1987]]
+  + [[https://drive.google.com/file/d/0B65OWczbRgzAR0kzeF9FYXRIRmc/view?usp=drive_web][Polaris-Poseidon Fleet Ballistic Missle Fact Sheet 1967]]
+* Sounds
+  #+INDEX: navy
+  + USS /Woodrow Wilson/ diving alarm, [[https://freesound.org/people/mkjunker/sounds/156672/][WAV version]], [[https://drive.google.com/file/d/0B65OWczbRgzAaWxNOEVpQWx0am8/view?usp=drive_web][MP3 version]]
+  + [[https://drive.google.com/file/d/0B65OWczbRgzAOTNZTEJDdTFCVEE/view?usp=drive_web]["Just As I Am"]]
+* Pictures
+  #+INDEX: navy
+  + [[https://drive.google.com/file/d/0B65OWczbRgzAb0tqdDJ5SnFVak0/view?usp=drive_web][USS /Woodrow Wilson/ wardroom, outboard of USS /Orion/, Santo Stefano Island, Italy, 1992]]
+* Postscript Files
+  # consider moving to github
+  /The following plotting tools are provided as-is. The author makes
+  no guarantees about their accuracy or usefulness. Use them at your
+  own risk./
+
+  Don't have a Postscript printer? Try ([[http://pages.cs.wisc.edu/~ghost/][Ghostscript and Ghostview
+  (GSView for Windows environments)]]. These tools allow viewing and
+  printing Postscript files.
+
+  Some of the Postscript files were developed using MetaPost. A Windows
+  version of MetaPost is included with MikTeX at The MikTeX Project
+  Page. For more on MetaPost, try:
+  * [[http://www.tug.org/metapost.html][TUG's MetaPost page]]
+
+  Files:
+  + maneuvering board: [[https://drive.google.com/file/d/0B65OWczbRgzAREJJaHV0d1FRZmM/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzATkx4YWF3ZEdEcGM/view?usp=drive_web][MetaPost source]] [[https://msi.nga.mil/media/ManeuveringBoard.pdf][PDF from NGA]] https://msi.nga.mil/Publications/RNMB
+  + navigation plot: [[https://drive.google.com/file/d/0B65OWczbRgzANUNrYnBvUHVGWU0/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzAbnJMRHN2SmJsNGs/view?usp=drive_web][MetaPost source]]
+  + wind chill chart: [[https://drive.google.com/file/d/0B65OWczbRgzAd2YtSDBoVUdrcGs/view?usp=drive_web][postscript]], [[https://drive.google.com/file/d/0B65OWczbRgzAbkRRdFNzcmVnVzQ/view?usp=drive_web][gnuplot source]]
+  /TO DO: move these files./
+* Sheepshead
+  Trump Precedence: \\
+  Q\clubs Q\spades Q\hearts Q\diamond   J\clubs J\spades J\hearts
+  J\diamond A\diamond 10\diamond K\diamond 9\diamond 8\diamond
+  7\diamond
+
+  Fail Precedence: \\
+  (\clubs \spades \diamond) A 10 K 9 8 7
+
+  |      <r> |    |      |       |       |        |     |
+  |   *Card* |  A |   10 |     K |     Q |      J |     |
+  | *Points* | 11 |   10 |     4 |     3 |      2 |     |
+
+  |           <r> | <c> | <c>  |  <c>  |  <c>  |  <c>   | <c> |
+  |        Points |  0  | 1-30 | 31-60 | 61-90 | 91-119 | 120 |
+  | Partner Score | +3  |  +2  |  +1   |  -1   |   -2   | -3  |
+  
+# +INCLUDE: documents.org :only-contents t
 
 * Page 2
-#+INCLUDE: page2.org :only-contents t
+* Text
+  #+INDEX: text
+  Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non
+  orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut,
+  lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.
+  Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec
+  at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id
+  enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.
+  Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam
+  euismod tellus id erat.
+
+* Math
+  #+INDEX: math
+  $\sin(x) / x$
+# +INCLUDE: page2.org :only-contents t
 
 * Links
   #+INDEX: links

@@ -20,7 +20,7 @@
                                              :html-link-up "index.html"
                                              :html-link-home "index.html"
                                              :exclude "settings.org"
-                                             :makeindex nil
+                                             :makeindex t
                                              :with-toc nil
                                              :publishing-function org-html-publish-to-html
                                              :auto-sitemap org-public-current-project)))
