@@ -4,7 +4,7 @@
 #+INDEX: Home Page
 Click on a heading to see more.  Press ~i~ to change views.
 
-My permanent link is https://alum.mit.edu/junker.
+My permanent link is https://alum.mit.edu/www/junker.
 
 This page is under construction.  My original page is at
 https://sites.google.com/site/mkjunker.  Please look there for missing
