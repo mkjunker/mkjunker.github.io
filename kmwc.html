@@ -1,0 +1,51 @@
+
+<html>
+  <head>
+    <title>Displaying JSON Data</title>
+    <script>
+      window.addEventListener('load',init,false);
+      function init(e){
+          documentLoader()
+          // document.getElementById('myButton').addEventListener('click',documentLoader,false);
+      }
+
+      function reqListener () {
+          // convert the string from the file to an object with JSON.parse
+          var obj = JSON.parse(this.responseText);
+
+          // display the object's data like any object
+          document.getElementById('raw').innerHTML
+              = obj.properties.rawMessage;
+          document.getElementById('temperature').innerHTML
+              = "Temperature: " + (obj.properties.temperature.value *
+                                   9 / 5 + 32).toPrecision(2) + " F";
+          document.getElementById('text').innerHTML
+              = "Conditions: " + obj.properties.textDescription;
+          // https://www.w3schools.com/js/js_dates.asp
+          date = new Date(obj.properties.timestamp)
+          document.getElementById('date').innerHTML = date
+      }
+
+      function documentLoader(){
+          var oReq = new XMLHttpRequest();
+          oReq.onload = reqListener;
+          oReq.open("get", "https://api.weather.gov/stations/KMKC/observations/latest", true);
+          oReq.send();
+      }
+    </script>
+  </head>
+  <body>
+    <!--
+    <form id="myForm">
+      <button id="myButton" type="button">Click to Load</button>
+    </form>
+    !-->
+    <h1>Timmerman</h1>
+    <div id="date"></div>
+    <p>
+    <div id="temperature"></div>
+    <div id="text"></div>
+    <p>
+    <div id="raw"></div>
+  </body>
+</html>
