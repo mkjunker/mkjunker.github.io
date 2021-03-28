@@ -24,6 +24,9 @@ content, which will be moved here soon (I hope).  [2021-02-10 Wed]
 <iframe src="kmke.html" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
 #+end_export
 #+begin_export html
+<iframe src="https://www.ndbc.noaa.gov/data/latest_obs/pwaw3.txt" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+#+end_export
+#+begin_export html
 <iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=PWAW3" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
 #+end_export
 #+begin_export html
