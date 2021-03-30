@@ -12,20 +12,43 @@
 
       var output = ""
 
+      function tempstr(degc) {
+          return ((degc * 9 / 5) + 32)
+              .toPrecision(5)
+              .split('.')[0]
+              + " F"
+      }
+
       function reqListener () {
           // convert the string from the file to an object with JSON.parse
           var obj = JSON.parse(this.responseText);
 
-          date = new Date(obj.properties.timestamp);
-          output += "<p>";
-          output += date;
+          var date = new Date(obj.properties.timestamp);
+          var now = new Date()
+          output += '<p>'
+          if ((now - date) > 7200000) {
+              output += '<br><font color="red">OLD</font> '
+          }
+          var data = date.toString().split(' ');
+          output += obj.properties.rawMessage.substring(0,4) + ' '
+              + data[4].substring(0,5) + ' ' + data[0] + ' '
+              + data[1] + ' ' + data[2];
           output += "<br>";
-          output += "Temperature: " + (obj.properties.temperature.value *
-                                       9 / 5 + 32).toPrecision(2) + " F";
+          output += ("Temperature: "
+                     + tempstr(obj.properties.temperature.value))
+          if (obj.properties.windChill.value !== null) {
+              output += ' '
+              output += "WC: " + tempstr(obj.properties.windChill.value)
+          }
+          if (obj.properties.heatIndex.value !== null) {
+              output += ' '
+              output += "HI: " + tempstr(obj.properties.heatIndex.value)
+          }
           output += "<br>"
           output += "Conditions: " + obj.properties.textDescription;
           output += "<br>";
-          output += obj.properties.rawMessage;
+          output += ('<font color="green">' + obj.properties.rawMessage
+                     + '</font>');
 
           document.getElementById('output').innerHTML = output + "  $$$"
 
@@ -33,7 +56,7 @@
 
       function documentLoader(){
           var oReq;
-          var stations = ["KMWC", "KMKE"]
+          var stations = ["KMWC", "KETB", "KUES", "KMKE"]
           for(sta in stations)
           {
               oReq = new XMLHttpRequest();
