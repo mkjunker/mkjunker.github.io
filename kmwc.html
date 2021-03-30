@@ -13,6 +13,9 @@
       var output = ""
 
       function tempstr(degc) {
+          if (degc === null) {
+              return null
+          }
           return ((degc * 9 / 5) + 32)
               .toPrecision(5)
               .split('.')[0]
