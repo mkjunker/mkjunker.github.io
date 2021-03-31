@@ -104,12 +104,12 @@ content, which will be moved here soon (I hope).  [2021-02-10 Wed]
    /TO DO: move these files./
 * Sheepshead
   Trump Precedence: \\
-  Q\clubs Q\spades Q\hearts Q\diamond   J\clubs J\spades J\hearts
-  J\diamond A\diamond 10\diamond K\diamond 9\diamond 8\diamond
-  7\diamond
+  Q\clubs Q\spades Q\hearts Q\diams   J\clubs J\spades J\hearts
+  J\diams A\diams 10\diams K\diams 9\diams 8\diams
+  7\diams
 
   Fail Precedence: \\
-  (\clubs \spades \diamond) A 10 K 9 8 7
+  (\clubs \spades \diams) A 10 K 9 8 7
 
   |      <r> |    |      |       |       |        |     |
   |   *Card* |  A |   10 |     K |     Q |      J |     |
