@@ -10,6 +10,11 @@ This page is under construction.  My original page is at
 https://sites.google.com/site/mkjunker.  Please look there for missing
 content, which will be moved here soon (I hope).  [2021-02-10 Wed]
 
+* Calendar
+  # settings, click on calendar, "integrate"
+  #+begin_export html
+  <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bDllc2k2NGprbmQ5bWY3OTU2MTFlY2k5cWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OWc3amJubTR2bWkyZ3B0MTIyZWdjbmphZG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aWg3aGowMDFkODg4bG9qbG9jZzFwcjQ5ZHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dW9pdnJybDIxajQ5ZjZiNXQ1OG9nbTNybG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OHE1Y25rdGhjMWUxa2M0ZG12M2s5ZTJpOHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=I2RheW51bUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmZsXzlfJTQ3cmVlbislNDJheSslNTBhY2tlcnMjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWxiXzhfJTRkaWx3YXVrZWUrJTQycmV3ZXJzI3Nwb3J0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmJhXzE1XyU0ZGlsd2F1a2VlKyU0MnVja3Mjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bmNhYWZfMTAyXyU0ZWF2eSslNGRpZHNoaXBtZW4jc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bmNhYWZfMzZfJTU3aXNjb25zaW4rJTQyYWRnZXJzI3Nwb3J0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;color=%239E69AF&amp;color=%23B39DDB&amp;color=%23E67C73&amp;color=%23F09300&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;mode=AGENDA&amp;showTitle=0" style="border:solid 1px #777" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+  #+end_export
 * Weather
   #+begin_export html
   <a class="weatherwidget-io" href="https://forecast7.com/en/43d24n87d98/thiensville/?unit=us" data-label_1="THIENSVILLE" data-label_2="WEATHER" data-theme="original" >THIENSVILLE WEATHER</a>
