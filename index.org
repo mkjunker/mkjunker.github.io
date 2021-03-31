@@ -10,39 +10,52 @@ This page is under construction.  My original page is at
 https://sites.google.com/site/mkjunker.  Please look there for missing
 content, which will be moved here soon (I hope).  [2021-02-10 Wed]
 
-#+begin_export html
-<a class="weatherwidget-io" href="https://forecast7.com/en/43d24n87d98/thiensville/?unit=us" data-label_1="THIENSVILLE" data-label_2="WEATHER" data-theme="original" >THIENSVILLE WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-#+end_export
+* Weather
+  #+begin_export html
+  <a class="weatherwidget-io" href="https://forecast7.com/en/43d24n87d98/thiensville/?unit=us" data-label_1="THIENSVILLE" data-label_2="WEATHER" data-theme="original" >THIENSVILLE WEATHER</a>
+  <script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+  #+end_export
 
-#+begin_export html
-<iframe src="kmwc.html" style="border: solid thin #3366ff; width:500px; height:300px"></iframe>
-#+end_export
-# +begin_export html
-# <iframe src="kmke.html" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
-# +end_export
-# +begin_export html
-# <iframe src="https://www.ndbc.noaa.gov/data/latest_obs/pwaw3.txt" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
-# +end_export
-#+begin_export html
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=PWAW3" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
-#+end_export
-#+begin_export html
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=MLWW3" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
-#+end_export
-#+begin_export html
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45013" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
-#+end_export
-#+begin_export html
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45007" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
-#+end_export
-# +begin_export html
-# <iframe name="KMKE" style="border: 0; frameborder: 0;" width="325" height="500" scrolling="auto" src="https://www.weather.gov/hfo/WWAwidget#KMKE"></iframe>
-# +end_export
-# https://www.ndbc.noaa.gov/rss/ndbc_obs_search.php?lat=43.23706N&lon=87.97032W&radius=100
+  #+begin_export html
+  <iframe src="kmwc.html" style="border: solid thin #3366ff; width:500px; height:300px"></iframe>
+  #+end_export
+  # +begin_export html
+  # <iframe src="kmke.html" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+  # +end_export
+  # +begin_export html
+  # <iframe src="https://www.ndbc.noaa.gov/data/latest_obs/pwaw3.txt" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+  # +end_export
+  #+begin_export html
+  <iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=PWAW3" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+  #+end_export
+  #+begin_export html
+  <iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=MLWW3" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+  #+end_export
+  #+begin_export html
+  <iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45013" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+  #+end_export
+  #+begin_export html
+  <iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45007" style="border: solid thin #3366ff; width:200px; height:300px"></iframe>
+  #+end_export
+  # +begin_export html
+  # <iframe name="KMKE" style="border: 0; frameborder: 0;" width="325" height="500" scrolling="auto" src="https://www.weather.gov/hfo/WWAwidget#KMKE"></iframe>
+  # +end_export
+  # https://www.ndbc.noaa.gov/rss/ndbc_obs_search.php?lat=43.23706N&lon=87.97032W&radius=100
 
+* Sports
+  #+begin_export html
+  <script type="text/javascript"
+  src="https://widgets.sports-reference.com/wg.fcgi?script=br_standings&amp;params=br_standings_lg:NL,br_standings_div:C,br_standings_css:1&amp;css=1"></script>
+  #+end_export
+  #+begin_export html
+  <script type="text/javascript" src="https://widgets.sports-reference.com/wg.fcgi?script=bbr_standings&amp;params=bbr_standings_conf:E,bbr_standings_css:0&amp;css=1"></script>
+  <script src="https://widgets.sports-reference.com/wg.fcgi?css=1&site=bbr&url=%2Fteams%2FMIL%2F2021_games.html&div=div_games"></script>
+  #+end_export
+  #+begin_export html
+  <script src="https://widgets.sports-reference.com/wg.fcgi?css=1&site=cfb&url=%2Fcfb%2Fschools%2Fnavy%2F2020-schedule.html&div=div_schedule"></script>
+  #+end_export
 * Junker's Laws
   1. If you're using Excel, you're probably doing it wrong.
   2. The best review is trying to implement the code or test.
