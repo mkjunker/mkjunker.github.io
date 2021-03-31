@@ -99,7 +99,7 @@
       function parseForecast() {
           var obj = JSON.parse(this.responseText);
 
-          forecast += "<h4>Forecast</h4>";
+          forecast += '<h4><a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english">Forecast</a></h4>';
           for(p in obj.time.startPeriodName) {
               forecast += "<details><summary>";
               forecast += '<span style="width:2in">';
