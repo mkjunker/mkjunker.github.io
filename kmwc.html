@@ -11,6 +11,7 @@
       }
 
       var output = ""
+      var forecast = ""
 
       function tempstr(degc) {
           if (degc === null) {
@@ -91,8 +92,30 @@
           output += "<br>"
           output += ('<span style="color:green"><small>'
                      + obj.properties.rawMessage + '</small></span></details>')
-          document.getElementById('output').innerHTML = output
+          document.getElementById('conditions').innerHTML = output
 
+      }
+
+      function parseForecast() {
+          var obj = JSON.parse(this.responseText);
+
+          forecast += "<h4>Forecast</h4>";
+          for(p in obj.time.startPeriodName) {
+              forecast += "<details><summary>";
+              forecast += '<span style="width:2in">';
+              forecast += obj.time.startPeriodName[p] + ": ";
+              // Can we make the remainder at a fixed horizontal
+              // position?
+              forecast += '</span>';
+              forecast += obj.data.temperature[p] + " F, ";
+              forecast += obj.data.weather[p];
+              forecast += "</summary>"
+              forecast += '<div style="margin-left:0.25in">';
+              forecast += obj.data.text[p];
+              forecast += '</div>';
+              forecast += "</details>"
+          }
+          document.getElementById('forecast').innerHTML = forecast;
       }
 
       function documentLoader(){
@@ -105,10 +128,17 @@
               oReq.open("get", "https://api.weather.gov/stations/" + stations[sta] + "/observations/latest", true);
               oReq.send();
           }
+          var pReq;
+          pReq = new XMLHttpRequest();
+          pReq.onload = parseForecast;
+          pReq.open("get", "https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english&FcstType=json", true);
+          pReq.send();
+
       }
     </script>
   </head>
   <body>
-    <div id="output"></div>
+    <div id="conditions"></div>
+    <div id="forecast"></div>
   </body>
 </html>
