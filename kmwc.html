@@ -32,7 +32,7 @@
               out += " MPH";
           }
           if( properties.windGust.value ) {
-              out += " gusting to ";
+              out += " gust ";
               out += (properties.windGust.value
                       * 15625 / 25146).toFixed();
               out += " MPH";
@@ -46,15 +46,17 @@
 
           var date = new Date(obj.properties.timestamp);
           var now = new Date()
-          output += '<p>'
+          output += '<details><summary>'
           if ((now - date) > 7200000) {
-              output += '<br><font color="red">OLD</font> '
+              output += '<font color="red">OLD</font> '
           }
           var data = date.toString().split(' ');
           output += obj.properties.rawMessage.substr(0,4) + ' '
               + data[4].substr(0,5) + ' ' + data[0] + ' '
               + data[1] + ' ' + data[2];
-          output += "<br>";
+          output += ' ' + tempstr(obj.properties.temperature.value);
+          output += ' ' + obj.properties.textDescription;
+          output += "</summary>";
           output += ("Temperature: "
                      + tempstr(obj.properties.temperature.value))
           if (obj.properties.windChill.value !== null) {
@@ -87,9 +89,9 @@
           output += ' ';
           output += windstr(obj.properties);
           output += "<br>"
-          output += ('<font color="green">' + obj.properties.rawMessage
-                     + '</font>');
-          document.getElementById('output').innerHTML = output + "  $$$"
+          output += ('<span style="color:green"><small>'
+                     + obj.properties.rawMessage + '</small></span></details>')
+          document.getElementById('output').innerHTML = output
 
       }
 
