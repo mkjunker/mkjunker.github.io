@@ -16,10 +16,28 @@
           if (degc === null) {
               return null
           }
-          return ((degc * 9 / 5) + 32)
-              .toPrecision(5)
-              .split('.')[0]
-              + " F"
+          return ((degc * 9 / 5) + 32).toFixed() + " F"
+      }
+
+      function windstr(properties) {
+          var out = "Wind:";
+          if( properties.windDirection.value !== null ) {
+              out += " ";
+              out += properties.windDirection.value.toString();
+          }
+          if( properties.windSpeed.value !== null ) {
+              out += " ";
+              out += (properties.windSpeed.value
+                      * 15625 / 25146).toFixed();
+              out += " MPH";
+          }
+          if( properties.windGust.value ) {
+              out += " gusting to ";
+              out += (properties.windGust.value
+                      * 15625 / 25146).toFixed();
+              out += " MPH";
+          }
+          return out;
       }
 
       function reqListener () {
@@ -33,8 +51,8 @@
               output += '<br><font color="red">OLD</font> '
           }
           var data = date.toString().split(' ');
-          output += obj.properties.rawMessage.substring(0,4) + ' '
-              + data[4].substring(0,5) + ' ' + data[0] + ' '
+          output += obj.properties.rawMessage.substr(0,4) + ' '
+              + data[4].substr(0,5) + ' ' + data[0] + ' '
               + data[1] + ' ' + data[2];
           output += "<br>";
           output += ("Temperature: "
@@ -47,12 +65,30 @@
               output += ' '
               output += "HI: " + tempstr(obj.properties.heatIndex.value)
           }
+          if (obj.properties.dewpoint.value !== null) {
+              output += ' '
+              output += "DP: " + tempstr(obj.properties.dewpoint.value)
+          }
+          if (obj.properties.relativeHumidity.value !== null) {
+              output += ' RH:';
+              output +=
+                  obj.properties.relativeHumidity.value.toFixed();
+              output += '%';
+          }
           output += "<br>"
           output += "Conditions: " + obj.properties.textDescription;
-          output += "<br>";
+          output += " ";
+          if( obj.properties.barometricPressure.value !== null ) {
+              output += ' Baro: ';
+              output += (obj.properties.barometricPressure.value
+                         * (152 / 514731)).toFixed(2);
+              output += ' inHg';
+          }
+          output += ' ';
+          output += windstr(obj.properties);
+          output += "<br>"
           output += ('<font color="green">' + obj.properties.rawMessage
                      + '</font>');
-
           document.getElementById('output').innerHTML = output + "  $$$"
 
       }
