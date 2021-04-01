@@ -1,5 +1,5 @@
 
-<html>
+<html lang="en">
   <head>
     <title>Displaying JSON Data</title>
     <script>
@@ -18,6 +18,22 @@
               return null
           }
           return ((degc * 9 / 5) + 32).toFixed() + " F"
+      }
+
+      function openAll() {
+          var x = document.getElementsByTagName("details");
+          var i;
+          for (i = 0; i < x.length; i++) {
+              x[i].setAttribute("open", "true");
+          }
+      }
+
+      function closeAll() {
+          var x = document.getElementsByTagName("details");
+          var i;
+          for (i = 0; i < x.length; i++) {
+              x[i].removeAttribute("open", "true");
+          }
       }
 
       function windstr(properties) {
@@ -58,6 +74,7 @@
               output += '  <span style="color:red">OLD</span> '
           }
           output += "</samp></summary>";
+          output += '<div style="margin-left:0.25in">'
           output += ("Temperature: "
                      + tempstr(obj.properties.temperature.value))
           if (obj.properties.windChill.value !== null) {
@@ -91,7 +108,7 @@
           output += windstr(obj.properties);
           output += "<br>"
           output += ('<span style="color:green"><small>'
-                     + obj.properties.rawMessage + '</small></span></details>')
+                     + obj.properties.rawMessage + '</small></span></div></details>')
           document.getElementById('conditions').innerHTML = output
 
       }
@@ -99,11 +116,14 @@
       function parseForecast() {
           var obj = JSON.parse(this.responseText);
 
-          forecast += '<h4><a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english">Forecast</a></h4>';
+          forecast +=
+              '<h4><a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english">Forecast</a>'
+              + ' ' + obj.creationDateLocal
+              + '</h4>';
           for(p in obj.time.startPeriodName) {
               forecast += "<details><summary>";
               forecast += '<span style="width:2in">';
-              forecast += obj.time.startPeriodName[p] + ": ";
+              forecast += '<strong>' + obj.time.startPeriodName[p] + ":</strong> ";
               // Can we make the remainder at a fixed horizontal
               // position?
               forecast += '</span>';
@@ -138,6 +158,8 @@
     </script>
   </head>
   <body>
+    <button type="button" onclick="openAll()">Expand All</button>
+    <button type="button" onclick="closeAll()">Close All</button>
     <div id="conditions"></div>
     <div id="forecast"></div>
   </body>
