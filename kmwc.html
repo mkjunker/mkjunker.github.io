@@ -9,8 +9,9 @@
           // document.getElementById('myButton').addEventListener('click',documentLoader,false);
       }
 
-      var output = ""
-      var forecast = ""
+      var output = "";
+      var forecast = "";
+      var alert = "";
 
       function tempstr(degc) {
           if (degc === null) {
@@ -137,6 +138,38 @@
           document.getElementById('forecast').innerHTML = forecast;
       }
 
+      function dtstr(s) {
+          return s.substr(0,10) + ' ' + s.substr(16,5);
+      }
+
+      function parseAlert() {
+          var obj = JSON.parse(this.responseText);
+
+          for(f in obj.features) {
+              onset = new Date(obj.features[f].properties.onset)
+              expires = new Date(obj.features[f].properties.expires)
+              alert += '<details><summary><span style="color:red">'
+                  +
+                  obj.features[f].properties.parameters.NWSheadline[0]
+                  + '</span>'
+                  + ' '
+                  + dtstr(onset.toString())
+                  + '-'
+                  + dtstr(expires.toString())
+                  + '</summary>'
+                  + '<div style="margin-left:0.25in">'
+                  + '<em>'
+                  + obj.features[f].properties.headline
+                  + '</em>'
+                  + '<br>'
+                  + obj.features[f].properties.description
+                  + '</div>'
+                  + '</details>';
+          }
+
+          document.getElementById('alert').innerHTML = alert;
+      }
+
       function documentLoader(){
           var oReq;
           var stations = ["KMWC", "KETB", "KUES", "KMKE"]
@@ -153,6 +186,12 @@
           pReq.open("get", "https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english&FcstType=json", true);
           pReq.send();
 
+          var pReq;
+          pReq = new XMLHttpRequest();
+          pReq.onload = parseAlert;
+          pReq.open("get", "https://api.weather.gov/alerts/active?point=43.2371,-87.9703", true);
+          pReq.send();
+
           var now = new Date();
           document.getElementById('datetime').innerHTML = now.toString().substr(16,5);
       }
@@ -162,6 +201,7 @@
     <button type="button" onclick="openAll()">Expand All</button>
     <button type="button" onclick="closeAll()">Close All</button>
     <button onClick="window.location.reload();">Refresh <span id="datetime"></button>
+    <div id="alert"></div>
     <div id="conditions"></div>
     <div id="forecast"></div>
   </body>
