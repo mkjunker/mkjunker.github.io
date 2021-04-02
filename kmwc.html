@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <title>Displaying JSON Data</title>
@@ -75,8 +74,8 @@
           }
           output += "</samp></summary>";
           output += '<div style="margin-left:0.25in">'
-          output += ("Temperature: "
-                     + tempstr(obj.properties.temperature.value))
+//          output += ("Temperature: "
+//                     + tempstr(obj.properties.temperature.value))
           if (obj.properties.windChill.value !== null) {
               output += ' '
               output += "WC: " + tempstr(obj.properties.windChill.value)
@@ -87,7 +86,7 @@
           }
           if (obj.properties.dewpoint.value !== null) {
               output += ' '
-              output += "DP: " + tempstr(obj.properties.dewpoint.value)
+              output += "DewP: " + tempstr(obj.properties.dewpoint.value)
           }
           if (obj.properties.relativeHumidity.value !== null) {
               output += ' RH:';
@@ -95,11 +94,11 @@
                   obj.properties.relativeHumidity.value.toFixed();
               output += '%';
           }
-          output += "<br>"
-          output += "Conditions: " + obj.properties.textDescription;
-          output += " ";
+//          output += "<br>"
+//          output += "Conditions: " + obj.properties.textDescription;
+//          output += " ";
           if( obj.properties.barometricPressure.value !== null ) {
-              output += ' Baro: ';
+              output += ' BaroP: ';
               output += (obj.properties.barometricPressure.value
                          * (152 / 514731)).toFixed(2);
               output += ' inHg';
@@ -117,7 +116,7 @@
           var obj = JSON.parse(this.responseText);
 
           forecast +=
-              '<h4><a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english">Forecast</a>'
+              '<h4><a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english" target="_blank">Forecast</a>'
               + ' ' + obj.creationDateLocal
               + '</h4>';
           for(p in obj.time.startPeriodName) {
@@ -154,12 +153,15 @@
           pReq.open("get", "https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english&FcstType=json", true);
           pReq.send();
 
+          var now = new Date();
+          document.getElementById('datetime').innerHTML = now.toString().substr(16,5);
       }
     </script>
   </head>
   <body>
     <button type="button" onclick="openAll()">Expand All</button>
     <button type="button" onclick="closeAll()">Close All</button>
+    <button onClick="window.location.reload();">Refresh <span id="datetime"></button>
     <div id="conditions"></div>
     <div id="forecast"></div>
   </body>
