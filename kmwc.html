@@ -154,7 +154,7 @@
                   + '</span>'
                   + ' '
                   + dtstr(onset.toString())
-                  + '-'
+                  + '&ndash;'
                   + dtstr(expires.toString())
                   + '</summary>'
                   + '<div style="margin-left:0.25in">'
@@ -198,6 +198,11 @@
     </script>
   </head>
   <body>
+    <noscript>
+      <a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english">
+        weather.gov
+      </a>
+    </noscript>
     <button type="button" onclick="openAll()">Expand All</button>
     <button type="button" onclick="closeAll()">Close All</button>
     <button onClick="window.location.reload();">Refresh <span id="datetime"></button>
