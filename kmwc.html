@@ -12,6 +12,8 @@
       var output = "";
       var forecast = "";
       var alert = "";
+      var points = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE',
+                    'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW', 'N'];
 
       function tempstr(degc) {
           if (degc === null) {
@@ -40,7 +42,11 @@
           var out = "Wind:";
           if( properties.windDirection.value !== null ) {
               out += " ";
-              out += properties.windDirection.value.toString();
+              var point = Math.round(
+                  properties.windDirection.value / (360 / 16));
+              point = Math.round( 359 / (360/16));
+              out += points[point];
+              // out += properties.windDirection.value.toString();
           }
           if( properties.windSpeed.value !== null ) {
               out += " ";
@@ -53,6 +59,9 @@
               out += (properties.windGust.value
                       * 15625 / 25146).toFixed();
               out += " MPH";
+          }
+          if( properties.windSpeed.value == 0 ) {
+              out = "Wind: Calm";
           }
           return out;
       }
@@ -79,15 +88,15 @@
 //                     + tempstr(obj.properties.temperature.value))
           if (obj.properties.windChill.value !== null) {
               output += ' '
-              output += "WC: " + tempstr(obj.properties.windChill.value)
+              output += "WC:" + tempstr(obj.properties.windChill.value)
           }
           if (obj.properties.heatIndex.value !== null) {
               output += ' '
-              output += "HI: " + tempstr(obj.properties.heatIndex.value)
+              output += "HI:" + tempstr(obj.properties.heatIndex.value)
           }
           if (obj.properties.dewpoint.value !== null) {
               output += ' '
-              output += "DewP: " + tempstr(obj.properties.dewpoint.value)
+              output += "DewP:" + tempstr(obj.properties.dewpoint.value)
           }
           if (obj.properties.relativeHumidity.value !== null) {
               output += ' RH:';
@@ -99,7 +108,7 @@
 //          output += "Conditions: " + obj.properties.textDescription;
 //          output += " ";
           if( obj.properties.barometricPressure.value !== null ) {
-              output += ' BaroP: ';
+              output += ' BaroP:';
               output += (obj.properties.barometricPressure.value
                          * (152 / 514731)).toFixed(2);
               output += ' inHg';
