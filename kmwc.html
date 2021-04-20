@@ -39,7 +39,7 @@
       }
 
       function windstr(properties) {
-          var out = "Wind:";
+          var out = "<small>Wind:</small>";
           if( properties.windDirection.value !== null ) {
               out += " ";
               var point = Math.round(
@@ -89,31 +89,37 @@
           output += windstr(obj.properties);
           output += ' ';
           if (obj.properties.windChill.value !== null) {
-              output += ' '
-              output += "WC:" + tempstr(obj.properties.windChill.value)
+              output += ' ';
+              output += '<span style="color:Blue"><small>WC:</small>'
+                  + tempstr(obj.properties.windChill.value)
+                  + '</span>';
           }
           if (obj.properties.heatIndex.value !== null) {
               output += ' '
-              output += "HI:" + tempstr(obj.properties.heatIndex.value)
+              output += '<span style="color:red"><small>HI:</small>'
+                  + tempstr(obj.properties.heatIndex.value)
+                  + '</span>';
           }
           if (obj.properties.dewpoint.value !== null) {
               output += ' '
-              output += "DewP:" + tempstr(obj.properties.dewpoint.value)
+              output += '<span style="color:SaddleBrown"><small>DewP:</small>'
+                  + tempstr(obj.properties.dewpoint.value)
+                  + '</span>';
           }
           if (obj.properties.relativeHumidity.value !== null) {
-              output += ' RH:';
+              output += ' <span style="color:RoyalBlue"><small>RH:</small>';
               output +=
                   obj.properties.relativeHumidity.value.toFixed();
-              output += '%';
+              output += '%</span>';
           }
 //          output += "<br>"
 //          output += "Conditions: " + obj.properties.textDescription;
 //          output += " ";
           if( obj.properties.barometricPressure.value !== null ) {
-              output += ' BaroP:';
+              output += ' <span style="color:Maroon"><small>BaroP:</small>';
               output += (obj.properties.barometricPressure.value
                          * (152 / 514731)).toFixed(2);
-              output += ' inHg';
+              output += ' inHg</span>';
           }
           output += "<br>";
           var rm = obj.properties.rawMessage;
