@@ -19,7 +19,7 @@
           if (degc === null) {
               return null
           }
-          return ((degc * 9 / 5) + 32).toFixed() + " F"
+          return ((degc * 9 / 5) + 32).toFixed() + "&thinsp;F"
       }
 
       function openAll() {
@@ -41,7 +41,6 @@
       function windstr(properties) {
           var out = "<small>Wind:</small>";
           if( properties.windDirection.value !== null ) {
-              out += " ";
               var point = Math.round(
                   properties.windDirection.value / (360 / 16));
               out += points[point];
@@ -51,16 +50,16 @@
               out += " ";
               out += (properties.windSpeed.value
                       * 15625 / 25146).toFixed();
-              out += " MPH";
+              out += "&thinsp;MPH";
           }
           if( properties.windGust.value ) {
-              out += " gust ";
+              out += "&thinsp;gust&thinsp;";
               out += (properties.windGust.value
                       * 15625 / 25146).toFixed();
-              out += " MPH";
+              out += "&thinsp;MPH";
           }
           if( properties.windSpeed.value == 0 ) {
-              out = "Wind: Calm";
+              out = "<small>Wind:</small>Calm";
           }
           return out;
       }
@@ -72,7 +71,7 @@
 
           var date = new Date(obj.properties.timestamp);
           var now = new Date();
-          output += '<details><summary><samp>'
+          output += '<details><summary><samp><span style="font-size:16">'
           var data = date.toString().split(' ');
           output += obj.properties.rawMessage.substr(0,4) + ' '
               + data[4].substr(0,5) + ' ' + data[0] + ', '
@@ -82,32 +81,32 @@
           if ((now - date) > 7200000) {
               output += '  <span style="color:red">OLD</span> '
           }
-          output += "</samp></summary>";
+          output += "</span></samp></summary>";
           output += '<div style="margin-left:0.25in;font-family:sans-serif">'
 //          output += ("Temperature: "
 //                     + tempstr(obj.properties.temperature.value))
           output += windstr(obj.properties);
-          output += ' ';
           if (obj.properties.windChill.value !== null) {
-              output += ' ';
+              output += '&ensp;';
               output += '<span style="color:Blue"><small>WC:</small>'
                   + tempstr(obj.properties.windChill.value)
                   + '</span>';
           }
           if (obj.properties.heatIndex.value !== null) {
-              output += ' '
+              output += '&ensp;';
               output += '<span style="color:red"><small>HI:</small>'
                   + tempstr(obj.properties.heatIndex.value)
                   + '</span>';
           }
           if (obj.properties.dewpoint.value !== null) {
-              output += ' '
+              output += '&ensp;';
               output += '<span style="color:SaddleBrown"><small>DewP:</small>'
                   + tempstr(obj.properties.dewpoint.value)
                   + '</span>';
           }
           if (obj.properties.relativeHumidity.value !== null) {
-              output += ' <span style="color:RoyalBlue"><small>RH:</small>';
+              output += '&ensp;';
+              output += '<span style="color:RoyalBlue"><small>RH:</small>';
               output +=
                   obj.properties.relativeHumidity.value.toFixed();
               output += '%</span>';
@@ -116,10 +115,12 @@
 //          output += "Conditions: " + obj.properties.textDescription;
 //          output += " ";
           if( obj.properties.barometricPressure.value !== null ) {
-              output += ' <span style="color:Maroon"><small>BaroP:</small>';
+              output += '&ensp;';
+              output += '<span style="color:Maroon"><small>BaroP:</small>';
               output += (obj.properties.barometricPressure.value
                          * (152 / 514731)).toFixed(2);
-              output += ' inHg</span>';
+              // want thinsp, but it breaks
+              output += '&nbsp;inHg</span>';
           }
           output += "<br>";
           var rm = obj.properties.rawMessage;
