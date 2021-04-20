@@ -9,7 +9,7 @@
           // document.getElementById('myButton').addEventListener('click',documentLoader,false);
       }
 
-      var output = "";
+      var global_output = "";
       var forecast = "";
       var alert = "";
       var points = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE',
@@ -68,9 +68,10 @@
       function reqListener () {
           // convert the string from the file to an object with JSON.parse
           var obj = JSON.parse(this.responseText);
+          var output = "";
 
           var date = new Date(obj.properties.timestamp);
-          var now = new Date()
+          var now = new Date();
           output += '<details><summary><samp>'
           var data = date.toString().split(' ');
           output += obj.properties.rawMessage.substr(0,4) + ' '
@@ -82,9 +83,11 @@
               output += '  <span style="color:red">OLD</span> '
           }
           output += "</samp></summary>";
-          output += '<div style="margin-left:0.25in">'
+          output += '<div style="margin-left:0.25in;font-family:sans-serif">'
 //          output += ("Temperature: "
 //                     + tempstr(obj.properties.temperature.value))
+          output += windstr(obj.properties);
+          output += ' ';
           if (obj.properties.windChill.value !== null) {
               output += ' '
               output += "WC:" + tempstr(obj.properties.windChill.value)
@@ -112,12 +115,14 @@
                          * (152 / 514731)).toFixed(2);
               output += ' inHg';
           }
-          output += ' ';
-          output += windstr(obj.properties);
-          output += "<br>"
+          output += "<br>";
+          var rm = obj.properties.rawMessage;
           output += ('<span style="color:green"><small>'
-                     + obj.properties.rawMessage + '</small></span></div></details>')
-          document.getElementById('conditions').innerHTML = output
+                     + rm + '</small></span></div></details>');
+          var station = rm.substr(0,4)
+          document.getElementById(station).innerHTML = output;
+          global_output += output;
+          document.getElementById('conditions').innerHTML = global_output
 
       }
 
@@ -137,7 +142,7 @@
               forecast += '</span>';
               forecast += obj.data.temperature[p] + " F, ";
               forecast += obj.data.weather[p];
-              forecast += "</summary>"
+              forecast += "</summary>";
               forecast += '<div style="margin-left:0.25in">';
               forecast += obj.data.text[p];
               forecast += '</div>';
@@ -215,7 +220,11 @@
     <button type="button" onclick="closeAll()">Close All</button>
     <button onClick="window.location.reload();">Refresh <span id="datetime"></button>
     <div id="alert"></div>
-    <div id="conditions"></div>
+    <!-- <div id="conditions"></div> -->
+    <div id="KMWC"></div>
+    <div id="KETB"></div>
+    <div id="KUES"></div>
+    <div id="KMKE"></div>
     <div id="forecast"></div>
   </body>
 </html>
