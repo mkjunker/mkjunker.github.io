@@ -128,8 +128,9 @@
                      + rm + '</small></span></div></details>');
           var station = rm.substr(0,4)
           document.getElementById(station).innerHTML = output;
+          //
           global_output += output;
-          document.getElementById('conditions').innerHTML = global_output
+//          document.getElementById('conditions').innerHTML = global_output
 
       }
 
@@ -168,10 +169,11 @@
           for(f in obj.features) {
               onset = new Date(obj.features[f].properties.onset)
               expires = new Date(obj.features[f].properties.expires)
-              alert += '<details><summary><span style="color:red">'
+              alert += '<details style="font-family:sans-serif">'
+                  + '<summary><strong><span style="color:red">'
                   +
                   obj.features[f].properties.parameters.NWSheadline[0]
-                  + '</span>'
+                  + '</strong></span>'
                   + ' '
                   + dtstr(onset.toString())
                   + '&ndash;'
