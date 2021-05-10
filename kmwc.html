@@ -169,6 +169,10 @@
           for(f in obj.features) {
               onset = new Date(obj.features[f].properties.onset)
               expires = new Date(obj.features[f].properties.expires)
+              ends = new Date(obj.features[f].properties.ends)
+              if(expires > ends) {
+                  ends = expires;
+              }
               alert += '<details style="font-family:sans-serif">'
                   + '<summary><strong><span style="color:red">'
                   +
@@ -177,7 +181,7 @@
                   + ' '
                   + dtstr(onset.toString())
                   + '&ndash;'
-                  + dtstr(expires.toString())
+                  + dtstr(ends.toString())
                   + '</summary>'
                   + '<div style="margin-left:0.25in">'
                   + '<em>'
