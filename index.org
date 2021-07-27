@@ -2,13 +2,16 @@
 #+INFOJS_OPT: view:overview toc:nil
 #+TITLE: Matt's Home Page
 #+INDEX: Home Page
+#+begin_export html
+<iframe src="https://free.timeanddate.com/clock/i7wu1wo5/n158/fn17/fs16/tt0/tw1/tm1/ta1/tb4" frameborder="0" width="159" height="40"></iframe>
+#+end_export
+
 Click on a heading to see more.  Press ~i~ to change views.
 
 My permanent link is https://alum.mit.edu/www/junker.
 
 This page is under construction.  My original page is at
-https://sites.google.com/site/mkjunker.  Please look there for missing
-content, which will be moved here soon (I hope).  [2021-02-10 Wed]
+https://sites.google.com/site/mkjunker. [2021-07-27 Tue]
 
 * Calendar
   # settings, click on calendar, "integrate"
