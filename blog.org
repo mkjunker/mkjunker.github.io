@@ -1,0 +1,115 @@
+* Entry 1
+  :PROPERTIES:
+  :ID:       e2a89acf-b095-4dce-9570-27fb8910edfd
+  :PUBDATE:  <2021-11-23 Tue 12:04>
+  :END:
+  boo!
+* Entry 2
+  :PROPERTIES:
+  :ID:       180e0c2e-9125-4689-b268-8c030488baf8
+  :PUBDATE:  <2021-11-23 Tue 12:04>
+  :END:
+  eek!
+* Setup                                                            :noexport:
+  :PROPERTIES:
+  :VISIBILITY: folded
+  :ID:       a57f0f80-76e9-495b-8329-d9876980bed2
+  :PUBDATE:  <2021-11-23 Tue 12:04>
+  :END:
+** Org
+   :PROPERTIES:
+   :ID:       29fdbbcd-0f76-474d-b957-c1ea6a1f9690
+   :END:
+*** Default
+    :PROPERTIES:
+    :ID:       144172b7-d2bb-4ff1-98e0-044791261273
+    :END:
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:t todo:t |:t
+#+title: blog
+#+date: <2021-11-23 Tue>
+#+author: Matthew K. Junker
+#+email: junker@alum.mit.edu
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 27.2 (Org mode 9.5)
+#+cite_export:
+*** Matt
+    :PROPERTIES:
+    :ID:       1d59394d-a71e-492c-8fcf-869360c4a460
+    :END:
+#+options: ':t ^:{} toc:nil
+#+startup: logdrawer
+#+drawers: SETUP
+#+todo: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
+#+latex_header: \usepackage{newcent} \usepackage{savetrees}
+#+latex_header_extra: \pagestyle{myheadings} %\markright{}}
+#+html_link_home: index.html
+#+html_link_up: index.html
+#+html_head: <style type="text/css"><!--/*--><![CDATA[/*><!--*/.timestamp { color : #000000; }/*]]>*/--></style>
+#+infojs_opt: view:showall toc:t ltoc:nil
+*** LaTeX
+    :PROPERTIES:
+    :ID:       67f3f067-5571-4804-ab99-db5ac71bcac0
+    :END:
+#+latex_class: article
+#+latex_class_options:
+#+latex_header:
+#+latex_header_extra:
+#+description:
+#+keywords:
+#+subtitle:
+#+latex_compiler: pdflatex
+#+date: \today
+*** HTML
+    :PROPERTIES:
+    :ID:       d07564dc-8c75-4b7f-8f15-e8322d732fb0
+    :END:
+#+options: html-link-use-abs-url:nil html-postamble:auto
+#+options: html-preamble:t html-scripts:nil html-style:t
+#+options: html5-fancy:nil tex:t
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+html_content_class: content
+#+description:
+#+keywords:
+#+html_link_home:
+#+html_link_up:
+#+html_mathjax:
+#+html_equation_reference_format: \eqref{%s}
+#+html_head:
+#+html_head_extra:
+#+subtitle:
+#+infojs_opt:
+#+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.2 (<a href="https://orgmode.org">Org</a> mode 9.5)
+#+latex_header:
+** Local Variables
+   :PROPERTIES:
+   :ID:       5ae8dd39-edd8-4992-ae9f-cd0833ec10eb
+   :END:
+#+BEGIN_SRC emacs-lisp :eval no
+Local Variables:
+eval: (require 'ox-publish)
+eval: (add-to-list 'org-publish-project-alist
+        (list "blog"
+        :base-directory "~/.emacs.d/org/"
+        :publishing-directory "~/public_html"
+        :publishing-function 'org-html-publish-to-html
+        :exclude ".*"
+        :html-link-up "index.html"
+        :html-link-home "index.html"
+        :headline-levels 1
+        :with-planning t
+        :include (list "blog.org")))
+time-stamp-pattern: nil
+time-stamp-start: "^#\\+date:[ 	]*"
+time-stamp-end: "[ 	]*$"
+time-stamp-format: "%3b %2d, %:y, %:I:%02M %#p"
+org-export-date-timestamp-format: "%3b %2d, %Y, %l:%02M %p"
+eval: (mj-org-startup-lisp)
+End:
+#+END_SRC
