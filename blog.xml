@@ -15,8 +15,8 @@
   <description><![CDATA[
   ]]></description>
   <language>en</language>
-  <pubDate>Tue, 23 Nov 2021 13:18:10 -0600</pubDate>
-  <lastBuildDate>Tue, 23 Nov 2021 13:18:10 -0600</lastBuildDate>
+  <pubDate>Tue, 23 Nov 2021 13:26:41 -0600</pubDate>
+  <lastBuildDate>Tue, 23 Nov 2021 13:26:41 -0600</lastBuildDate>
   <generator>Emacs 27.2 Org-mode 9.5</generator>
   <webMaster>junker@alum.mit.edu (Matthew K. Junker)</webMaster>
   <image>
@@ -29,16 +29,30 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-        <li><a href="#orgcdb7817">1. Duplicate entries? <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue 13:04]</span></span></a></li>
-        <li><a href="#org33f2610">2. Entry 1</a></li>
-        <li><a href="#org2f103e3">3. Entry 2</a></li>
-        <li><a href="#org7d0b73f">4. Aha <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue]</span></span></a></li>
+        <li><a href="#orgacc84a8">1. This one should be good?</a></li>
+        <li><a href="#orgcdb7817">2. Duplicate entries? <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue 13:04]</span></span></a></li>
+        <li><a href="#org33f2610">3. Entry 1</a></li>
+        <li><a href="#org2f103e3">4. Entry 2</a></li>
+        <li><a href="#org7d0b73f">5. Aha <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue]</span></span></a></li>
       </ul>
     </div>
   </div>
   <p>
     <a href="blog.xml">Subscribe via RSS.</a>
   </p>
+  <item>
+    <title>This one should be good?</title>
+    <link>https://mkjunker.github.io/blog.html#orgacc84a8</link>
+    <author>junker@alum.mit.edu (Matthew K. Junker)</author>
+    <guid isPermaLink="false">https://mkjunker.github.io/blog.html#orgacc84a8</guid>
+    <pubDate>Tue, 23 Nov 2021 13:26:00 -0600</pubDate>
+
+    <description><![CDATA[<p>
+    I messed with the GUID of the previous entry
+    too!
+    </p>
+    ]]></description>
+  </item>
   <item>
     <title>Duplicate entries? [2021-11-23 Tue 13:04]</title>
     <link>https://mkjunker.github.io/blog.html#orgcdb7817</link>

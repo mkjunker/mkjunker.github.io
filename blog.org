@@ -1,9 +1,16 @@
 #+title: Matt's blog
-#+date: Nov 23, 2021, 1:18 pm
+#+date: Nov 23, 2021, 1:26 pm
 [[file:blog.xml][Subscribe via RSS.]]
+* This one should be good?
+  :PROPERTIES:
+  :ID:       e30f5a31-8de3-4e3e-8529-ede9d91283bf
+  :PUBDATE:  <2021-11-23 Tue 13:26>
+  :END:
+  [2021-11-23 Tue 13:26] I messed with the GUID of the previous entry
+  too!
 * Duplicate entries? [2021-11-23 Tue 13:04]
   :PROPERTIES:
-  :ID:       c26a3e56-3495-4d7a-a239-0d6c9c2a97d3
+  :ID:       c26a3e56-3495-4d7a-a239-0d6c9c2a97d4
   :PUBDATE:  <2021-11-23 Tue 13:05>
   :END:
   Caused by changing settings?  Here's a new entry, but there should
