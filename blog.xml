@@ -9,19 +9,19 @@
      xmlns:georss="http://www.georss.org/georss"
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:media="http://search.yahoo.com/mrss/"><channel>
-  <title>blog</title>
+  <title>Matt's blog</title>
   <atom:link href="index.html/blog.xml" rel="self" type="application/rss+xml" />
   <link>index.html</link>
   <description><![CDATA[
   ]]></description>
   <language>en</language>
-  <pubDate>Tue, 23 Nov 2021 12:04:11 -0600</pubDate>
-  <lastBuildDate>Tue, 23 Nov 2021 12:04:11 -0600</lastBuildDate>
+  <pubDate>Tue, 23 Nov 2021 12:07:38 -0600</pubDate>
+  <lastBuildDate>Tue, 23 Nov 2021 12:07:38 -0600</lastBuildDate>
   <generator>Emacs 27.2 Org-mode 9.5</generator>
   <webMaster>junker@alum.mit.edu (Matthew K. Junker)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
-    <title>blog</title>
+    <title>Matt's blog</title>
     <link>index.html</link>
   </image>
 
@@ -29,16 +29,16 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-        <li><a href="#orgf9531db">1. Entry 1</a></li>
-        <li><a href="#org91e90e0">2. Entry 2</a></li>
+        <li><a href="#org7e80d07">1. Entry 1</a></li>
+        <li><a href="#orgcf05deb">2. Entry 2</a></li>
       </ul>
     </div>
   </div>
   <item>
     <title>Entry 1</title>
-    <link>index.html/blog.html#orgf9531db</link>
+    <link>index.html/blog.html#org7e80d07</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#orgf9531db</guid>
+    <guid isPermaLink="false">index.html/blog.html#org7e80d07</guid>
     <pubDate>Tue, 23 Nov 2021 12:04:00 -0600</pubDate>
 
     <description><![CDATA[<p>
@@ -48,9 +48,9 @@
   </item>
   <item>
     <title>Entry 2</title>
-    <link>index.html/blog.html#org91e90e0</link>
+    <link>index.html/blog.html#orgcf05deb</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#org91e90e0</guid>
+    <guid isPermaLink="false">index.html/blog.html#orgcf05deb</guid>
     <pubDate>Tue, 23 Nov 2021 12:04:00 -0600</pubDate>
 
     <description><![CDATA[<p>
