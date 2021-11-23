@@ -15,8 +15,8 @@
   <description><![CDATA[
   ]]></description>
   <language>en</language>
-  <pubDate>Tue, 23 Nov 2021 12:28:34 -0600</pubDate>
-  <lastBuildDate>Tue, 23 Nov 2021 12:28:34 -0600</lastBuildDate>
+  <pubDate>Tue, 23 Nov 2021 13:05:07 -0600</pubDate>
+  <lastBuildDate>Tue, 23 Nov 2021 13:05:07 -0600</lastBuildDate>
   <generator>Emacs 27.2 Org-mode 9.5</generator>
   <webMaster>junker@alum.mit.edu (Matthew K. Junker)</webMaster>
   <image>
@@ -29,12 +29,29 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-        <li><a href="#org33f2610">1. Entry 1</a></li>
-        <li><a href="#org2f103e3">2. Entry 2</a></li>
-        <li><a href="#org7d0b73f">3. Aha <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue]</span></span></a></li>
+        <li><a href="#orgcdb7817">1. Duplicate entries? <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue 13:04]</span></span></a></li>
+        <li><a href="#org33f2610">2. Entry 1</a></li>
+        <li><a href="#org2f103e3">3. Entry 2</a></li>
+        <li><a href="#org7d0b73f">4. Aha <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue]</span></span></a></li>
       </ul>
     </div>
   </div>
+  <p>
+    <a href="blog.xml">Subscribe via RSS.</a>
+  </p>
+  <item>
+    <title>Duplicate entries? [2021-11-23 Tue 13:04]</title>
+    <link>index.html/blog.html#orgcdb7817</link>
+    <author>junker@alum.mit.edu (Matthew K. Junker)</author>
+    <guid isPermaLink="false">index.html/blog.html#orgcdb7817</guid>
+    <pubDate>Tue, 23 Nov 2021 13:05:00 -0600</pubDate>
+
+    <description><![CDATA[<p>
+    Caused by changing settings?  Here's a new entry, but there should
+    be no change in the settings.
+    </p>
+    ]]></description>
+  </item>
   <item>
     <title>Entry 1</title>
     <link>index.html/blog.html#org33f2610</link>

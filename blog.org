@@ -1,6 +1,13 @@
 #+title: Matt's blog
-#+date: Nov 23, 2021, 12:37 pm
+#+date: Nov 23, 2021, 1:05 pm
 [[file:blog.xml][Subscribe via RSS.]]
+* Duplicate entries? [2021-11-23 Tue 13:04]
+  :PROPERTIES:
+  :ID:       c26a3e56-3495-4d7a-a239-0d6c9c2a97d3
+  :PUBDATE:  <2021-11-23 Tue 13:05>
+  :END:
+  Caused by changing settings?  Here's a new entry, but there should
+  be no change in the settings.
 * Entry 1
   :PROPERTIES:
   :ID:       e2a89acf-b095-4dce-9570-27fb8910edfd
