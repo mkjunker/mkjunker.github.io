@@ -23,5 +23,16 @@
                                              :makeindex t
                                              :with-toc nil
                                              :publishing-function org-html-publish-to-html
-                                             :auto-sitemap org-public-current-project)))
+                                             :auto-sitemap org-public-current-project)
+                                            ("rss_blog"
+                                             :base-directory "."
+                                             :publishing-directory "."
+                                             :base-extension "org"
+                                             :exclude ".*"
+                                             :include ("blog.org")
+                                             :publishing-function org-rss-publish-to-rss
+                                             :rss-extension "xml"
+                                             :makeindex nil
+                                             :section-numbers nil
+                                             :table-of-contents nil)))
               (org-html-postamble-format . (("en" "<p class=\"author\">Author: %a (%e)</p>\n<p class=\"date\">Date: %d</p>\n<p class=\"creator\">%c</p>\n<p class=\"validation\">%v</p>\n<p><a href=\"https://alum.mit.edu/www/junker\">https://alum.mit.edu/www/junker</a></p>"))))))

@@ -2,6 +2,7 @@
 
 - [[file:theindex.org][Concept Index]]
 - [[file:index.org][Matt's Home Page]]
+- [[file:blog.org][Matt's blog]]
 - [[file:documents.org][documents]]
 - [[file:page2.org][page2]]
 - [[file:readme.org][readme]]

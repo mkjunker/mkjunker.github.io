@@ -13,6 +13,8 @@ My permanent link is https://alum.mit.edu/www/junker.
 This page is under construction.  My original page is at
 https://sites.google.com/site/mkjunker. [2021-07-27 Tue]
 
+[[file:blog.org][Link to my blog (zzzz).]]
+
 * Calendar
   # settings, click on calendar, "integrate"
   #+begin_export html

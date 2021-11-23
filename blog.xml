@@ -15,8 +15,8 @@
   <description><![CDATA[
   ]]></description>
   <language>en</language>
-  <pubDate>Tue, 23 Nov 2021 12:07:38 -0600</pubDate>
-  <lastBuildDate>Tue, 23 Nov 2021 12:07:38 -0600</lastBuildDate>
+  <pubDate>Tue, 23 Nov 2021 12:28:34 -0600</pubDate>
+  <lastBuildDate>Tue, 23 Nov 2021 12:28:34 -0600</lastBuildDate>
   <generator>Emacs 27.2 Org-mode 9.5</generator>
   <webMaster>junker@alum.mit.edu (Matthew K. Junker)</webMaster>
   <image>
@@ -29,16 +29,17 @@
     <h2>Table of Contents</h2>
     <div id="text-table-of-contents" role="doc-toc">
       <ul>
-        <li><a href="#org7e80d07">1. Entry 1</a></li>
-        <li><a href="#orgcf05deb">2. Entry 2</a></li>
+        <li><a href="#org33f2610">1. Entry 1</a></li>
+        <li><a href="#org2f103e3">2. Entry 2</a></li>
+        <li><a href="#org7d0b73f">3. Aha <span class="timestamp-wrapper"><span class="timestamp">[2021-11-23 Tue]</span></span></a></li>
       </ul>
     </div>
   </div>
   <item>
     <title>Entry 1</title>
-    <link>index.html/blog.html#org7e80d07</link>
+    <link>index.html/blog.html#org33f2610</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#org7e80d07</guid>
+    <guid isPermaLink="false">index.html/blog.html#org33f2610</guid>
     <pubDate>Tue, 23 Nov 2021 12:04:00 -0600</pubDate>
 
     <description><![CDATA[<p>
@@ -48,13 +49,25 @@
   </item>
   <item>
     <title>Entry 2</title>
-    <link>index.html/blog.html#orgcf05deb</link>
+    <link>index.html/blog.html#org2f103e3</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#orgcf05deb</guid>
+    <guid isPermaLink="false">index.html/blog.html#org2f103e3</guid>
     <pubDate>Tue, 23 Nov 2021 12:04:00 -0600</pubDate>
 
     <description><![CDATA[<p>
     eek!
+    </p>
+    ]]></description>
+  </item>
+  <item>
+    <title>Aha [2021-11-23 Tue]</title>
+    <link>index.html/blog.html#org7d0b73f</link>
+    <author>junker@alum.mit.edu (Matthew K. Junker)</author>
+    <guid isPermaLink="false">index.html/blog.html#org7d0b73f</guid>
+    <pubDate>Tue, 23 Nov 2021 12:28:00 -0600</pubDate>
+
+    <description><![CDATA[<p>
+    &nabla;
     </p>
     ]]></description>
   </item>
