@@ -1,5 +1,5 @@
 #+title: Matt's blog
-#+date: Nov 23, 2021, 1:05 pm
+#+date: Nov 23, 2021, 1:18 pm
 [[file:blog.xml][Subscribe via RSS.]]
 * Duplicate entries? [2021-11-23 Tue 13:04]
   :PROPERTIES:
@@ -62,7 +62,7 @@
 #+todo: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
 #+latex_header: \usepackage{newcent} \usepackage{savetrees}
 #+latex_header_extra: \pagestyle{myheadings} %\markright{}}
-#+html_link_home: index.html
+#+html_link_home: https://mkjunker.github.io
 #+html_link_up: index.html
 #+html_head: <style type="text/css"><!--/*--><![CDATA[/*><!--*/.timestamp { color : #000000; }/*]]>*/--></style>
 #+infojs_opt: view:showall toc:nil ltoc:nil
@@ -91,7 +91,7 @@
 #+html_content_class: content
 #+description:
 #+keywords:
-#+html_link_home:
+#+html_link_home: 
 #+html_link_up:
 #+html_mathjax:
 #+html_equation_reference_format: \eqref{%s}

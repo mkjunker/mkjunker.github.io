@@ -10,19 +10,19 @@
      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:media="http://search.yahoo.com/mrss/"><channel>
   <title>Matt's blog</title>
-  <atom:link href="index.html/blog.xml" rel="self" type="application/rss+xml" />
-  <link>index.html</link>
+  <atom:link href="https://mkjunker.github.io/blog.xml" rel="self" type="application/rss+xml" />
+  <link>https://mkjunker.github.io</link>
   <description><![CDATA[
   ]]></description>
   <language>en</language>
-  <pubDate>Tue, 23 Nov 2021 13:05:07 -0600</pubDate>
-  <lastBuildDate>Tue, 23 Nov 2021 13:05:07 -0600</lastBuildDate>
+  <pubDate>Tue, 23 Nov 2021 13:18:10 -0600</pubDate>
+  <lastBuildDate>Tue, 23 Nov 2021 13:18:10 -0600</lastBuildDate>
   <generator>Emacs 27.2 Org-mode 9.5</generator>
   <webMaster>junker@alum.mit.edu (Matthew K. Junker)</webMaster>
   <image>
     <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
     <title>Matt's blog</title>
-    <link>index.html</link>
+    <link>https://mkjunker.github.io</link>
   </image>
 
   <div id="table-of-contents" role="doc-toc">
@@ -41,9 +41,9 @@
   </p>
   <item>
     <title>Duplicate entries? [2021-11-23 Tue 13:04]</title>
-    <link>index.html/blog.html#orgcdb7817</link>
+    <link>https://mkjunker.github.io/blog.html#orgcdb7817</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#orgcdb7817</guid>
+    <guid isPermaLink="false">https://mkjunker.github.io/blog.html#orgcdb7817</guid>
     <pubDate>Tue, 23 Nov 2021 13:05:00 -0600</pubDate>
 
     <description><![CDATA[<p>
@@ -54,9 +54,9 @@
   </item>
   <item>
     <title>Entry 1</title>
-    <link>index.html/blog.html#org33f2610</link>
+    <link>https://mkjunker.github.io/blog.html#org33f2610</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#org33f2610</guid>
+    <guid isPermaLink="false">https://mkjunker.github.io/blog.html#org33f2610</guid>
     <pubDate>Tue, 23 Nov 2021 12:04:00 -0600</pubDate>
 
     <description><![CDATA[<p>
@@ -66,9 +66,9 @@
   </item>
   <item>
     <title>Entry 2</title>
-    <link>index.html/blog.html#org2f103e3</link>
+    <link>https://mkjunker.github.io/blog.html#org2f103e3</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#org2f103e3</guid>
+    <guid isPermaLink="false">https://mkjunker.github.io/blog.html#org2f103e3</guid>
     <pubDate>Tue, 23 Nov 2021 12:04:00 -0600</pubDate>
 
     <description><![CDATA[<p>
@@ -78,9 +78,9 @@
   </item>
   <item>
     <title>Aha [2021-11-23 Tue]</title>
-    <link>index.html/blog.html#org7d0b73f</link>
+    <link>https://mkjunker.github.io/blog.html#org7d0b73f</link>
     <author>junker@alum.mit.edu (Matthew K. Junker)</author>
-    <guid isPermaLink="false">index.html/blog.html#org7d0b73f</guid>
+    <guid isPermaLink="false">https://mkjunker.github.io/blog.html#org7d0b73f</guid>
     <pubDate>Tue, 23 Nov 2021 12:28:00 -0600</pubDate>
 
     <description><![CDATA[<p>

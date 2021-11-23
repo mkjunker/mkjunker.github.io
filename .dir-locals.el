@@ -30,6 +30,7 @@
                                              :base-extension "org"
                                              :exclude ".*"
                                              :include ("blog.org")
+                                             :html-link-home "https://mkjunker.github.io"
                                              :publishing-function org-rss-publish-to-rss
                                              :rss-extension "xml"
                                              :makeindex nil
