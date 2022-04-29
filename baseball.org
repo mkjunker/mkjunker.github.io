@@ -1,0 +1,11 @@
+#+TITLE: Baseball Page
+* Links
++ [[https://www.tmyba.org/page/show/7144641-athletics][Team Page]]
+* Announcements
+** April 26
++ The calendar on the web site now looks correct.  Go to [[https://www.tmyba.org/page/show/7144641-athletics]].  The "Game Schedule" link goes to a list of games,  There is also an ICAL link at the bottom of the team page which you can use for adding the calendar to your favorite calendar tracker, such as Google Calendar, Outlook, etc.
++ Note that the times on the calendar are game times.  Pre-game practices start at 5:20.  We can practice outside the fence when we don't have the field.
++ Our first game is next Monday.  I have been told this is also picture day, but I have no other details.
++ The rules are at [[https://cdn1.sportngin.com/attachments/document/5d30-2674960/2022-High_Minor-Baseball-League-Rules.pdf#_ga=2.148121399.1841192311.1650987062-97375776.1645625763][TMYBA AA Rules (sportngin.com)]].  I don't expect everyone to read the whole document, but please look over the general rules in section 1, which cover player and fan conduct, clothing, glasses, casts, and cleats.
++ Practice yesterday went well.  I think everyone put the ball in play during the scrimmage.  We found some pitchers who can put the ball over the plate (at least sometimes), but we need more, and we'll continue to work with everyone on pitching skills.
++ We'll add catching tomorrow, starting with those who express an interest.  Runners can advance when the ball gets by the catcher, so blocking the ball is more important than catching it cleanly.
