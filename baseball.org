@@ -1,3 +1,4 @@
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+TITLE: Baseball Page
 * Links
 + [[https://www.tmyba.org/page/show/7144641-athletics][Team Page]]
