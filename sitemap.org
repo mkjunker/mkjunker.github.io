@@ -1,5 +1,6 @@
 #+TITLE: Sitemap for project mkjunker.github.io
 
+- [[file:baseball.org][Baseball Page]]
 - [[file:theindex.org][Concept Index]]
 - [[file:index.org][Matt's Home Page]]
 - [[file:blog.org][Matt's blog]]
