@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-22 Fri 07:05 -->
+<!-- 2024-10-11 Fri 15:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Matt's Home Page</title>
 <meta name="author" content="Matthew K. Junker" />
 <meta name="generator" content="Org Mode" />
-<style>
+<style type="text/css">
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -193,17 +193,12 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<style type="text/css">
-<!--/*--><![CDATA[/*><!--*/
-.timestamp { color : #000000; font-family: monospace !important }
-/*]]>*/-->
-</style>
-<style>*{font-family: sans-serif !important}</style>
-<style>iframe {overflow: scroll !important}</style>
+
 <script src="https://orgmode.org/org-info.js">
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 // @license-end
 </script>
+
 <script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 org_html_manager.set("TOC_DEPTH", "3");
@@ -218,27 +213,38 @@ org_html_manager.set("VIEW", "overview");
 org_html_manager.setup();  // activate after the parameters are set
 // @license-end
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -251,27 +257,28 @@ org_html_manager.setup();  // activate after the parameters are set
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org28e27bd">Calendar</a></li>
-<li><a href="#org8e8943c">COVID</a></li>
-<li><a href="#orgebb4ec4">Weather</a></li>
-<li><a href="#org101318a">Junker's Laws</a></li>
-<li><a href="#org948c5d5">Documents and Media</a>
+<li><a href="#org7ef6857">Flag</a></li>
+<li><a href="#orgefda8e7">Calendar</a></li>
+<li><a href="#orgcca841b">COVID</a></li>
+<li><a href="#orga4d61e1">Weather</a></li>
+<li><a href="#org5d5f7c7">Junker's Laws</a></li>
+<li><a href="#orga0abc46">Documents and Media</a>
 <ul>
-<li><a href="#org7b981e3">Emacs Files</a></li>
-<li><a href="#org7cf6143">Navy Documents</a></li>
-<li><a href="#org41e46e2">Sounds</a></li>
-<li><a href="#org66f8472">Pictures</a></li>
-<li><a href="#org4062b99">Postscript Files</a></li>
+<li><a href="#org4b17fe2">Emacs Files</a></li>
+<li><a href="#org0a4f28c">Navy Documents</a></li>
+<li><a href="#org53ed7e7">Sounds</a></li>
+<li><a href="#orgab3e60d">Pictures</a></li>
+<li><a href="#org3882b58">Postscript Files</a></li>
 </ul>
 </li>
-<li><a href="#orgc77be5d">Sheepshead</a></li>
-<li><a href="#org58b784a">Page 2</a>
+<li><a href="#org2668845">Sheepshead</a></li>
+<li><a href="#org5f2db29">Page 2</a>
 <ul>
-<li><a href="#orgb582d94">Text</a></li>
-<li><a href="#orgf6751ef">Math</a></li>
+<li><a href="#orgb6c6bc9">Text</a></li>
+<li><a href="#org15ec043">Math</a></li>
 </ul>
 </li>
-<li><a href="#org40dcee7">Links</a></li>
+<li><a href="#orgbcee625">Links</a></li>
 </ul>
 </div>
 </div>
@@ -293,68 +300,77 @@ This page is under construction.  My original page is at
 <p>
 <a href="blog.html">Link to my blog (zzzz).</a>
 </p>
-
-<div id="outline-container-org28e27bd" class="outline-2">
-<h2 id="org28e27bd">Calendar</h2>
-<div class="outline-text-2" id="text-org28e27bd">
-<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bDllc2k2NGprbmQ5bWY3OTU2MTFlY2k5cWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OWc3amJubTR2bWkyZ3B0MTIyZWdjbmphZG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aWg3aGowMDFkODg4bG9qbG9jZzFwcjQ5ZHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dW9pdnJybDIxajQ5ZjZiNXQ1OG9nbTNybG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OHE1Y25rdGhjMWUxa2M0ZG12M2s5ZTJpOHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=I2RheW51bUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmZsXzlfJTQ3cmVlbislNDJheSslNTBhY2tlcnMjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWxiXzhfJTRkaWx3YXVrZWUrJTQycmV3ZXJzI3Nwb3J0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmJhXzE1XyU0ZGlsd2F1a2VlKyU0MnVja3Mjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bmNhYWZfMTAyXyU0ZWF2eSslNGRpZHNoaXBtZW4jc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bmNhYWZfMzZfJTU3aXNjb25zaW4rJTQyYWRnZXJzI3Nwb3J0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;color=%239E69AF&amp;color=%23B39DDB&amp;color=%23E67C73&amp;color=%23F09300&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;mode=AGENDA&amp;showTitle=0" style="border:solid 1px #777" width="500" height="400" frameborder="0" 
-        ="no"></iframe>
+<div id="outline-container-org7ef6857" class="outline-2">
+<h2 id="org7ef6857">Flag</h2>
+<div class="outline-text-2" id="text-org7ef6857">
+<p>
+National
+</p>
+<script src="https://halfstaff.org/widgets/us-half-staff-flags.js"></script>
+<p>
+Wisconsin
+</p>
+<script src="https://halfstaff.org/widgets/us-half-staff-flags.js?st=wi"></script>
 </div>
 </div>
-<div id="outline-container-org8e8943c" class="outline-2">
-<h2 id="org8e8943c">COVID</h2>
-<div class="outline-text-2" id="text-org8e8943c">
-<div data-cdc-widget="COVIDCountyCheck" data-horizontal="true" ></div>
+<div id="outline-container-orgefda8e7" class="outline-2">
+<h2 id="orgefda8e7">Calendar</h2>
+<div class="outline-text-2" id="text-orgefda8e7">
+<iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bDllc2k2NGprbmQ5bWY3OTU2MTFlY2k5cWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OWc3amJubTR2bWkyZ3B0MTIyZWdjbmphZG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=aWg3aGowMDFkODg4bG9qbG9jZzFwcjQ5ZHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dW9pdnJybDIxajQ5ZjZiNXQ1OG9nbTNybG9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=OHE1Y25rdGhjMWUxa2M0ZG12M2s5ZTJpOHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=I2RheW51bUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmZsXzlfJTQ3cmVlbislNDJheSslNTBhY2tlcnMjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWxiXzhfJTRkaWx3YXVrZWUrJTQycmV3ZXJzI3Nwb3J0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bmJhXzE1XyU0ZGlsd2F1a2VlKyU0MnVja3Mjc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bmNhYWZfMTAyXyU0ZWF2eSslNGRpZHNoaXBtZW4jc3BvcnRzQGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bmNhYWZfMzZfJTU3aXNjb25zaW4rJTQyYWRnZXJzI3Nwb3J0c0Bncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AD1457&amp;color=%239E69AF&amp;color=%23B39DDB&amp;color=%23E67C73&amp;color=%23F09300&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;color=%23616161&amp;mode=AGENDA&amp;showTitle=0" style="border:solid 1px #777" width="500" height="400" frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+<div id="outline-container-orgcca841b" class="outline-2">
+<h2 id="orgcca841b">COVID</h2>
+<div class="outline-text-2" id="text-orgcca841b">
+<div data-cdc-widget="COVIDCountyCheck" data-horizontal="true" ></div> 
 <script src="https://tools.cdc.gov/1M1B"></script>
 </div>
 </div>
-<div id="outline-container-orgebb4ec4" class="outline-2">
-<h2 id="orgebb4ec4">Weather</h2>
-<div class="outline-text-2" id="text-orgebb4ec4">
-<iframe src="kmwc.html" style="border: solid thin #3366ff; width:500px; height:300px" scrolling="yes">
+<div id="outline-container-orga4d61e1" class="outline-2">
+<h2 id="orga4d61e1">Weather</h2>
+<div class="outline-text-2" id="text-orga4d61e1">
+<iframe src="kmwc.html" style="border: solid thin #3366ff; width:500px; height:300px">
 <a href="https://forecast.weather.gov/MapClick.php?lat=43.2371&lon=-87.9703&unit=0&lg=english">local weather</a>
 </iframe>
-<iframe title="PWAW3" src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=PWAW3" style="border: solid thin #3366ff; width:200px; height:300px" scrolling="yes">
+<iframe title="PWAW3" src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=PWAW3" style="border: solid thin #3366ff; width:200px; height:300px">
 Port Washington
 </iframe>
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=MLWW3" style="border: solid thin #3366ff; width:200px; height:300px" scrolling="yes">
+<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=MLWW3" style="border: solid thin #3366ff; width:200px; height:300px">
 Milwaukee harbor
 </iframe>
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45013" style="border: solid thin #3366ff; width:200px; height:300px" scrolling="yes">
+<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45013" style="border: solid thin #3366ff; width:200px; height:300px">
 Atwater Beach
 </iframe>
-<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45007" style="border: solid thin #3366ff; width:200px; height:300px" scrolling="yes">
+<iframe src="https://www.ndbc.noaa.gov/widgets/station_page.php?station=45007" style="border: solid thin #3366ff; width:200px; height:300px">
 Mid Lake buoy
 </iframe>
 </div>
 </div>
-
-<div id="outline-container-org101318a" class="outline-2">
-<h2 id="org101318a">Junker's Laws</h2>
-<div class="outline-text-2" id="text-org101318a">
+<div id="outline-container-org5d5f7c7" class="outline-2">
+<h2 id="org5d5f7c7">Junker's Laws</h2>
+<div class="outline-text-2" id="text-org5d5f7c7">
 <ol class="org-ol">
 <li>If you're using Excel, you're probably doing it wrong.</li>
 <li>The best review is trying to implement the code or test.</li>
 </ol>
 </div>
 </div>
-
-<div id="outline-container-org948c5d5" class="outline-2">
-<h2 id="org948c5d5">Documents and Media</h2>
-<div class="outline-text-2" id="text-org948c5d5">
+<div id="outline-container-orga0abc46" class="outline-2">
+<h2 id="orga0abc46">Documents and Media</h2>
+<div class="outline-text-2" id="text-orga0abc46">
 </div>
-<div id="outline-container-org7b981e3" class="outline-3">
-<h3 id="org7b981e3">Emacs Files</h3>
-<div class="outline-text-3" id="text-org7b981e3">
+<div id="outline-container-org4b17fe2" class="outline-3">
+<h3 id="org4b17fe2">Emacs Files</h3>
+<div class="outline-text-3" id="text-org4b17fe2">
 <ul class="org-ul">
 <li><a href="https://github.com/mkjunker">https://github.com/mkjunker</a> contains all of my public Emacs lisp
 files.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7cf6143" class="outline-3">
-<h3 id="org7cf6143">Navy Documents</h3>
-<div class="outline-text-3" id="text-org7cf6143">
+<div id="outline-container-org0a4f28c" class="outline-3">
+<h3 id="org0a4f28c">Navy Documents</h3>
+<div class="outline-text-3" id="text-org0a4f28c">
 <ul class="org-ul">
 <li><a href="https://drive.google.com/file/d/1RMurM18N3aC_bCx8Nn70R4xZGgbomD_G/view?usp=drive_web">USS <i>Woodrow Wilson</i> inactivation program, 24 September 1993</a></li>
 <li><a href="https://drive.google.com/file/d/1LqZOCDkWdKj85EVnD5DiRJNeUK7o25W6/view?usp=drive_web">Flooding in the Fan Room, <i>Fathom</i> Magazine, September/October 1993</a></li>
@@ -363,30 +379,30 @@ files.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org41e46e2" class="outline-3">
-<h3 id="org41e46e2">Sounds</h3>
-<div class="outline-text-3" id="text-org41e46e2">
+<div id="outline-container-org53ed7e7" class="outline-3">
+<h3 id="org53ed7e7">Sounds</h3>
+<div class="outline-text-3" id="text-org53ed7e7">
 <ul class="org-ul">
 <li>USS <i>Woodrow Wilson</i> diving alarm, <a href="https://freesound.org/people/mkjunker/sounds/156672/">WAV version</a>, <a href="https://drive.google.com/file/d/0B65OWczbRgzAaWxNOEVpQWx0am8/view?usp=drive_web">MP3 version</a></li>
 <li><a href="https://drive.google.com/file/d/0B65OWczbRgzAOTNZTEJDdTFCVEE/view?usp=drive_web">"Just As I Am"</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org66f8472" class="outline-3">
-<h3 id="org66f8472">Pictures</h3>
-<div class="outline-text-3" id="text-org66f8472">
+<div id="outline-container-orgab3e60d" class="outline-3">
+<h3 id="orgab3e60d">Pictures</h3>
+<div class="outline-text-3" id="text-orgab3e60d">
 <ul class="org-ul">
 <li><a href="https://drive.google.com/file/d/0B65OWczbRgzAb0tqdDJ5SnFVak0/view?usp=drive_web">USS <i>Woodrow Wilson</i> wardroom, outboard of USS <i>Orion</i>, Santo Stefano Island, Italy, 1992</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4062b99" class="outline-3">
-<h3 id="org4062b99">Postscript Files</h3>
-<div class="outline-text-3" id="text-org4062b99">
+<div id="outline-container-org3882b58" class="outline-3">
+<h3 id="org3882b58">Postscript Files</h3>
+<div class="outline-text-3" id="text-org3882b58">
 <p>
-/The following plotting tools are provided as-is. The author makes
+<i>The following plotting tools are provided as-is. The author makes
 no guarantees about their accuracy or usefulness. Use them at your
-own risk./
+own risk.</i>
 </p>
 
 <p>
@@ -418,9 +434,9 @@ Files:
 </div>
 </div>
 </div>
-<div id="outline-container-orgc77be5d" class="outline-2">
-<h2 id="orgc77be5d">Sheepshead</h2>
-<div class="outline-text-2" id="text-orgc77be5d">
+<div id="outline-container-org2668845" class="outline-2">
+<h2 id="org2668845">Sheepshead</h2>
+<div class="outline-text-2" id="text-org2668845">
 <p>
 Trump Precedence: <br />
 Q&clubs; Q&spades; Q&hearts; Q&diams;   J&clubs; J&spades; J&hearts;
@@ -516,14 +532,13 @@ Fail Precedence: <br />
 </table>
 </div>
 </div>
-
-<div id="outline-container-org58b784a" class="outline-2">
-<h2 id="org58b784a">Page 2</h2>
-<div class="outline-text-2" id="text-org58b784a">
+<div id="outline-container-org5f2db29" class="outline-2">
+<h2 id="org5f2db29">Page 2</h2>
+<div class="outline-text-2" id="text-org5f2db29">
 </div>
-<div id="outline-container-orgb582d94" class="outline-3">
-<h3 id="orgb582d94">Text</h3>
-<div class="outline-text-3" id="text-orgb582d94">
+<div id="outline-container-orgb6c6bc9" class="outline-3">
+<h3 id="orgb6c6bc9">Text</h3>
+<div class="outline-text-3" id="text-orgb6c6bc9">
 <p>
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non
 orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut,
@@ -536,20 +551,18 @@ euismod tellus id erat.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgf6751ef" class="outline-3">
-<h3 id="orgf6751ef">Math</h3>
-<div class="outline-text-3" id="text-orgf6751ef">
+<div id="outline-container-org15ec043" class="outline-3">
+<h3 id="org15ec043">Math</h3>
+<div class="outline-text-3" id="text-org15ec043">
 <p>
 \(\sin(x) / x\)
 </p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org40dcee7" class="outline-2">
-<h2 id="org40dcee7">Links</h2>
-<div class="outline-text-2" id="text-org40dcee7">
+<div id="outline-container-orgbcee625" class="outline-2">
+<h2 id="orgbcee625">Links</h2>
+<div class="outline-text-2" id="text-orgbcee625">
 <ul class="org-ul">
 <li>Permanent link to my home page: <a href="https://alum.mit.edu/www/junker">https://alum.mit.edu/www/junker</a></li>
 <li>My other page (soon to be redundant):
@@ -561,7 +574,7 @@ euismod tellus id erat.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Matthew K. Junker</p>
-<p class="date">Created: 2022-07-22 Fri 07:05</p>
+<p class="date">Created: 2024-10-11 Fri 15:32</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

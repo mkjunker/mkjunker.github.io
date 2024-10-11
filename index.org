@@ -15,6 +15,15 @@ https://sites.google.com/site/mkjunker. [2021-07-27 Tue]
 
 [[file:blog.org][Link to my blog (zzzz).]]
 
+* Flag
+  National
+  #+begin_export html
+  <script src="https://halfstaff.org/widgets/us-half-staff-flags.js"></script>
+  #+end_export
+  Wisconsin
+  #+begin_export html
+  <script src="https://halfstaff.org/widgets/us-half-staff-flags.js?st=wi"></script>
+  #+end_export
 * Calendar
   # settings, click on calendar, "integrate"
   #+begin_export html
