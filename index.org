@@ -85,8 +85,13 @@ https://sites.google.com/site/mkjunker. [2021-07-27 Tue]
   <script src="https://widgets.sports-reference.com/wg.fcgi?css=1&site=cfb&url=%2Fcfb%2Fschools%2Fnavy%2F2020-schedule.html&div=div_schedule"></script>
   #+end_export
 * Junker's Laws
-  1. If you're using Excel, you're probably doing it wrong.
-  2. The best review is trying to implement the code or test.
+  + If you're using Excel, you're probably doing it wrong.
+  + The machine should work for you, not vice versa.
+      + Corollary 1 (the laziness corollary): Hunt around until you find a tool to do the work for you.
+  + “Word” is not called “Book” for a reason.
+  + Compliance with standards promotes poor programming practices.
+  + You can’t have both extra hours and commuting.
+  + The best review is trying to implement the code or test.
 
 * Documents and Media
 ** Emacs Files
